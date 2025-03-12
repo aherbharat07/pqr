@@ -1,0 +1,23 @@
+# Regression or Classification? Possible options: [r, c]
+ptype: c
+
+# Paths
+data_folder: Input
+file_name: input.xlsx
+output_folder: Output
+
+# Data Manipulation
+should_scale_data: False
+shuffle_holdout: True
+random_state: 1908
+num_of_top_fts: 10
+
+# Features and Targets
+exclude_features: [
+  Weekly Average MDR_23,
+  Parent_Account_Name,
+  DW_Dell_Acct_ID,
+  lob_key,
+  Fiscal_Week
+]
+target: Outlier_flag
